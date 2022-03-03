@@ -1,19 +1,23 @@
 {
-  "name": "brischle.janick",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "@nrwl/tao": "13.8.4",
-    "@nrwl/cli": "13.8.4",
-    "@nrwl/workspace": "13.8.4",
-    "@types/node": "16.11.7",
-    "typescript": "~4.5.2",
-    "prettier": "^2.5.1"
-  },
-  "workspaces": [
-    "packages/**"
-  ]
+    "name": "brischle.janick",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "clear-cache": "nx reset",
+        "test:simple": "nx test simple",
+        "test:complex": "nx test complex"
+    },
+    "private": true,
+    "dependencies": {},
+    "devDependencies": {
+        "@nrwl/tao": "13.8.4",
+        "@nrwl/cli": "13.8.4",
+        "@nrwl/workspace": "13.8.4",
+        "@types/node": "16.11.7",
+        "typescript": "~4.5.2",
+        "prettier": "^2.5.1"
+    },
+    "workspaces": [
+        "packages/*"
+    ]
 }
