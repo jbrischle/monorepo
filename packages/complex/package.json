@@ -1,9 +1,7 @@
 {
     "name": "@brischle.janick/complex",
-    "version": "0.0.0",
-    "scripts": {
-        "test": "node index.js"
-    },
+    "version": "0.0.1",
+    "type": "commonjs",
     "dependencies": {
         "@brischle.janick/simple": "*"
     }

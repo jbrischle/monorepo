@@ -1,3 +1,32 @@
 {
-  "root": "packages\\complex"
+    "root": "packages/complex",
+    "sourceRoot": "packages/complex/src",
+    "targets": {
+        "build": {
+            "executor": "@nrwl/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/packages/complex",
+                "main": "packages/complex/src/index.ts",
+                "tsConfig": "packages/complex/tsconfig.lib.json",
+                "assets": ["packages/complex/*.md"]
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["packages/complex/**/*.ts"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/packages/complex"],
+            "options": {
+                "jestConfig": "packages/complex/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    },
+    "tags": []
 }

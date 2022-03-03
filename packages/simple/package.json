@@ -1,7 +1,5 @@
 {
-  "name": "@brischle.janick/simple",
-  "version": "0.0.0",
-  "scripts": {
-    "test": "node index.js"
-  }
+    "name": "@brischle.janick/simple",
+    "version": "0.0.1",
+    "type": "commonjs"
 }
