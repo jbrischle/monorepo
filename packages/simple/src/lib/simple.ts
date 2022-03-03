@@ -1,3 +1,3 @@
 export function simple(): string {
-    return 'simple';
+    return 'simple world';
 }

@@ -3,7 +3,9 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "clear-cache": "nx reset"
+        "clear-cache": "nx reset",
+        "dep-graph": "nx affected:dep-graph",
+        "dep-graph-uncommited": "nx affected:dep-graph --uncommited"
     },
     "private": true,
     "dependencies": {
